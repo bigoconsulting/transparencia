@@ -1,121 +1,93 @@
 ﻿<!DOCTYPE html>
-<html lang="es">
+<html lang="en">
+
 <head>
+
+
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Transparencia Municipal - @ViewBag.Title </title>
-    @Scripts.Render("~/bundles/jquery")
-    <script src="~/Scripts/DateTimePicker/bootstrap-datetimepicker.min.js" type="text/javascript"></script>
-    <!-- CSS -->
-    <link href="~/Content/Site/image/favicon.ico" rel="shortcut icon">
-    <link href="https://framework-gb.cdn.gob.mx/assets/styles/main.css" rel="stylesheet">
-    @*<style type="text/css">
-            #gobmx #navbar {
-                position: fixed;
-                top: 100px;
-                width: 100%;
-                z-index: 3;
-            }
-        </style>*@
-    <!-- Respond.js soporte de media queries para Internet Explorer 8 -->
-    <!-- ie8.js EventTarget para cada nodo en Internet Explorer 8 -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/ie8/0.2.2/ie8.js"></script>
-    <![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Full Width Pics - Start Bootstrap Template</title>
+
+    <!-- Bootstrap core CSS -->
+    @*<link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">*@
+    <link href="~/Content/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Custom styles for this template -->
+    @*<link href="css/full-width-pics.css" rel="stylesheet">*@
+    <link href="~/Content/css/full-width-pics.css" rel="stylesheet" />
 </head>
-<body id="gobmx">
-    <script type="text/javascript" src="~/Scripts/jquery-1.9.1.js"></script>
-    <script type="text/javascript" src="~/Scripts/jquery.unobtrusive-ajax.js"></script>
-    <script type="text/javascript" src="~/Scripts/jquery.validate.js"></script>
-    <script type="text/javascript" src="~/Scripts/jquery.validate.unobtrusive.js"></script>
-    <script type="text/javascript" src="~/Scripts/DateTimePicker/bootstrap-datetimepicker.min.js"></script>
-    @*<script type="text/javascript" src="~/Scripts/bootstrap.js"></script>*@
-    <!-- Contenido -->
-    <main class="page">
-        <div id="navbar">
-            @*class="navbar navbar-inverse sub-navbar navbar-static-top"*@
-            @*class="navbar navbar-inverse sub-navbar navbar-fixed-top"*@
-            <nav class="navbar navbar-inverse sub-navbar navbar-fixed-top">
-                <div class="container">
-                    <div class="navbar-header">
-                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#subenlaces">
-                            <span class="sr-only">Interruptor de Navegación</span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                        </button>
-                         
-                        <a class="navbar-brand" href='@Url.Action("Index")'>Portal de Transparencia MUnicipal</a>
-                         </div>
-                    <div class="collapse navbar-collapse" id="subenlaces">
-                        <ul class="nav navbar-nav navbar-right">
-                            @*<li><a href="#">Enlace</a></li>*@
 
-                            <li class="dropdown">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Consulta<span class="caret"></span></a>
-                                <ul class="dropdown-menu" role="menu">
-                                    <li><a href="@Url.Action("Consulta","Home")">Consulta</a></li>
+<body>
 
-                                </ul>
-                            </li>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <img src="~/Content/Image/cuetzalan.png" width="50" height="50" /><a class="navbar-brand" href="#">Cuetzalan del Progreso</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="@Url.Action("Index","Home")">
+                            Inicio
+                            <span class="sr-only">(current)</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Ayuntamiento</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Turismo</a>
+                    </li>
+                    <li class="nav-item-list">
+                        <a class="nav-link" href="@Url.Action("Consulta","Home")">Transparencia</a>
+                    </li>
+                   
 
+                    @*<li class="nav-item">
+            <a class="nav-link" href="#">Mas</a>
+        </li>*@
 
-                            <li class="dropdown">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Estados<span class="caret"></span></a>
-                                <ul class="dropdown-menu" role="menu">
-                                    <li><a href="@Url.Action("")"> Puebla</a></li>
-
-                                </ul>
-                            </li>
-
-                            <li class="dropdown">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Municipios<span class="caret"></span></a>
-                                <ul class="dropdown-menu" role="menu">
-                                    <li><a href="@Url.Action("")">Acajete</a></li>
-                                    <li><a href="@Url.Action("")">Acateno</a></li>
-                                    <li><a href="@Url.Action("")">Acatlán</a></li>
-                                    <li><a href="@Url.Action("")">Zaragoza</a></li>
-                                    <li><a href="@Url.Action("")">Zacatlán</a></li>
-                                </ul>
-                            </li>
-                            <li class="dropdown">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Reportes<span class="caret"></span></a>
-                                <ul class="dropdown-menu" role="menu">
-                                    <li><a href="#">Reporte 1</a></li>
-                                    <li><a href="#">Reporte 2</a></li>
-                                </ul>
-                            </li>
-
-                            <li>
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                                    <span class="glyphicon glyphicon-user">
-                                    </span>@User.Identity.Name <b class="caret"></b>
-                                </a>
-                                <ul class="dropdown-menu dropdown-menu-large row">
-                                    <li>
-                                        <a href="@Url.Action("LogOff", "Account")">
-                                            <span class="glyphicon glyphicon-off">
-                                            </span>Salir
-                                        </a>
-                                    </li>
-                                </ul>
-                            </li>
-
-                        </ul>
-                    </div>
-                </div>
-            </nav>
+                </ul>
+            </div>
         </div>
+    </nav>
 
+    <!-- Header - set the background image for the header in the line below -->
+    <header>
+        @*<img class="img-fluid d-block mx-auto" src="~/Content/Image/puebla_destinos-principales_cuetzalan_01.jpg" width="300" height="1700" alt="">*@
+        <center><img src="~/Content/Image/e7c0584255fa6f2981e510285a9e9e4f_L.jpg" width="1300" height="300" /></center>
+
+    </header>
+
+    <div class="container">
+
+        @RenderBody()
+
+    </div>
+
+
+
+    <!-- Footer -->
+    <footer class="py-5 bg-dark">
         <div class="container">
 
-            @RenderBody()
 
+            <p class="m-0 text-center text-white">Copyright &copy; Your Website 2018</p>
         </div>
-    </main>
-    <!-- JS -->
-    <script src="https://framework-gb.cdn.gob.mx/gobmx.js"></script>
+        <!-- /.container -->
+
+
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
 </body>
+
 </html>

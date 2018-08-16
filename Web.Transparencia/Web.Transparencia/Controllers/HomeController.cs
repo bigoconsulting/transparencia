@@ -31,6 +31,11 @@ namespace Web.Transparencia.Controllers
         {
             return View();
         }
+        public ActionResult SujetoObligado()
+        {
+            return View();
+        }
+
 
     }
 }
