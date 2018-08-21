@@ -1,0 +1,109 @@
+﻿
+@{
+    ViewBag.Title = "Documentos";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Documentos</h2>
+
+
+
+
+<link href="~/Content/css/Table.css" rel="stylesheet" />
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="~/Content/vendor/jquery/Table.js"></script>
+
+
+
+<!------ Include the above in your HEAD tag ---------->
+@*<h2>Documentos</h2>
+    <p>Type something in the input field to search the table for first names, last names or emails:</p>*@
+<input id="myInput" type="text" placeholder="Buscar..">
+<br><br>
+<table>
+    <thead>
+        <tr>
+            <th>Nombre de Documeto</th>
+            <th>Fecha de Documento</th>
+            <th>Tipo de Documento</th>
+            <th>Descarga</th>
+        </tr>
+    </thead>
+    <tbody id="myTable">
+        <tr>
+            <td>PRESUPUESTO DE INGRESOS 2018</td>
+            <td>01/01/2018</td>
+            <td>DECRETO</td>
+            <td>
+                <center>
+                    <a href="http://www.diputados.gob.mx/LeyesBiblio/pdf/LIF_2018_151117.pdf" target="_blank" class="btn btn-success btn-lg">
+                        <span class="glyphicon glyphicon-print"></span> Descarga
+                    </a>
+                </center>
+            </td>
+        </tr>
+        <tr>
+
+            <td>INVENTARIO DE BIENES MUEBLES</td>
+            <td>01/01/2018</td>
+            <td>DECRETO</td>
+            <td>
+                <center>
+                    <a href="~/Content/Documentos/INVENTARIO DE BIENES MUEBLES.pdf" target="_blank" class="btn btn-success btn-lg">
+                        <span class="glyphicon glyphicon-print"></span> Descarga
+                    </a>
+                </center>
+            </td>
+
+        </tr>
+        <tr>
+            <td>FORMATO DE OBLIGACIONES PAGADA</td>
+            <td>01/01/2018</td>
+            <td>DECRETO</td>
+            <td>
+                <center>
+                    <a href="~/Content/Documentos/FORMATO DE OBLIGACIONES PAGADA.pdf" target="_blank" class="btn btn-success btn-lg">
+                        <span class="glyphicon glyphicon-print"></span> Descarga
+                    </a>
+                </center>
+            </td>
+        </tr>
+        <tr>
+            <td>ESTADO ANALITICO DEL EJERCICIO</td>
+            <td>01/01/2018</td>
+            <td>DECRETO</td>
+            <td>
+                <center>
+                    <a href="~/Content/Documentos/ESTADO ANALITICO DEL EJERCICIO.pdf" target="_blank" class="btn btn-success btn-lg">
+                        <span class="glyphicon glyphicon-print"></span> Descarga
+                    </a>
+                </center>
+            </td>
+        </tr>
+        <tr>
+            <td>PROGR. Y PROYEC. DE INVERSION</td>
+            <td>01/01/2018</td>
+            <td>DECRETO</td>
+            <td>
+                <center>
+                    <a href="~/Content/Documentos/PROGR. Y PROYEC. DE INVERSION.pdf" target="_blank" class="btn btn-success btn-lg">
+                        <span class="glyphicon glyphicon-print"></span> Descarga
+                    </a>
+                </center>
+            </td>
+        </tr>
+        <tr>
+            <td>OFICIOS DE ENTREGA EDOS FINANCIEROS</td>
+            <td>01/01/2018</td>
+            <td>DECRETO</td>
+            <td>
+                <center>
+                    <a href="~/Content/Documentos/OFICIOS DE ENTREGA EDOS FINANCIEROS.pdf" target="_blank" class="btn btn-success btn-lg">
+                        <span class="glyphicon glyphicon-print"></span> Descarga
+                    </a>
+                </center>
+            </td>
+        </tr>
+    </tbody>
+</table>
+<p></p>

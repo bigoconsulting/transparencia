@@ -36,6 +36,25 @@ namespace Web.Transparencia.Controllers
             return View();
         }
 
+        public ActionResult Documentos()
+        {
+            return View();
+        }
 
+        public ActionResult Ayuntamiento()
+        {
+            return View();
+        }
+
+        public ActionResult Turismo()
+        {
+            return View();
+        }
+
+
+        public ActionResult Indicadores()
+        {
+            return View();
+        }
     }
 }

@@ -1,0 +1,44 @@
+﻿
+@{
+    ViewBag.Title = "Indicadores";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Indicadores</h2>
+
+<html>
+<head>
+    <title>Indicadores de Transparencia</title>
+</head>
+
+<script type="text/javascript" src="https://www.google.com/jsapi"></script>
+<script>
+    google.load("visualization", "1", { packages: ["corechart"] });
+    google.setOnLoadCallback(dibujarGrafico);
+    function dibujarGrafico() {
+        // Tabla de datos: valores y etiquetas de la gráfica
+        var data = google.visualization.arrayToDataTable([
+            ['Información Solicitada', 'Indice de Transparencia'],
+            ['Información Solicitada al Municipio', 20.21],
+            ['Informacion Solicitada por el Municipio', 4.28],
+            ['Información Brindada con motivos de Transparencia', 17.26],
+            ['Información Recibida por el Municipio', 10.25]
+        ]);
+        var options = {
+            title: 'Indicadores de Transparencia'
+        }
+        // Dibujar el gráfico
+        new google.visualization.ColumnChart(
+            //ColumnChart sería el tipo de gráfico a dibujar
+            document.getElementById('GraficoGoogleChart-ejemplo-1')
+        ).draw(data, options);
+    }
+</script>
+<body>
+    
+    <center>
+        <div id="GraficoGoogleChart-ejemplo-1" style="width: 1100px; height: 600px">
+        </div>
+    </center>
+</body>
+</html>

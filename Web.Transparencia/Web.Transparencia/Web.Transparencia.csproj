@@ -159,6 +159,8 @@
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\css\full-width-pics.css" />
+    <Content Include="Content\css\Imagen.css" />
+    <Content Include="Content\css\Table.css" />
     <Content Include="Content\Image\200px-Escudo_Estado_de_Puebla.png" />
     <Content Include="Content\Image\cuetzalan 6.jpg" />
     <Content Include="Content\Image\cuetzalan-pueblo-magico-puebla-mexico.jpg" />
@@ -179,6 +181,7 @@
     <Content Include="Content\vendor\jquery\jquery.min.js" />
     <Content Include="Content\vendor\jquery\jquery.slim.js" />
     <Content Include="Content\vendor\jquery\jquery.slim.min.js" />
+    <Content Include="Content\vendor\jquery\Table.js" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
@@ -196,6 +199,11 @@
     <Content Include="Content\vendor\bootstrap\js\bootstrap.min.js.map" />
     <Content Include="Content\vendor\jquery\jquery.min.map" />
     <Content Include="Content\vendor\jquery\jquery.slim.min.map" />
+    <Content Include="Content\Documentos\INVENTARIO DE BIENES MUEBLES.pdf" />
+    <Content Include="Content\Documentos\ESTADO ANALITICO DEL EJERCICIO.pdf" />
+    <Content Include="Content\Documentos\FORMATO DE OBLIGACIONES PAGADA.pdf" />
+    <Content Include="Content\Documentos\OFICIOS DE ENTREGA EDOS FINANCIEROS.pdf" />
+    <Content Include="Content\Documentos\PROGR. Y PROYEC. DE INVERSION.pdf" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
     <Content Include="Scripts\jquery-3.3.1.min.js" />
@@ -223,6 +231,10 @@
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Home\Consulta.cshtml" />
     <Content Include="Views\Home\SujetoObligado.cshtml" />
+    <Content Include="Views\Home\Documentos.cshtml" />
+    <Content Include="Views\Home\Ayuntamiento.cshtml" />
+    <Content Include="Views\Home\Turismo.cshtml" />
+    <Content Include="Views\Home\Indicadores.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
